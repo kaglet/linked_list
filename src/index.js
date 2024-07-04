@@ -1,20 +1,26 @@
-// Template code is for testing and example import purposes
+import LinkedList from "./linked_list.js";
 
-import "./styles.css";
-import exampleImage from "Images/ahtziri-lagarde-4_FsMDmCc6A-unsplash.jpg";
+let list = new LinkedList();
 
-function component() {
-  const element = document.createElement("div");
+list.append(2).append(5).append(17).append(21).append(12);
 
-  element.classList.add("test");
+console.log(list.toString());
 
-  // Add the image to our existing div.
-  const myIcon = new Image();
-  myIcon.src = exampleImage;
+console.log(list.head, list.tail());
 
-  element.append("Hi", myIcon);
+list.head = null;
+list.prepend(2).prepend(4).prepend(3);
 
-  return element;
-}
+console.log(list);
 
-document.body.appendChild(component());
+console.log(list.toString());
+
+console.log(list.find(2), list.find(7));
+
+list.insertAt(3, 67);
+
+console.log(list.toString());
+
+list.removeAt(3);
+
+console.log(list.toString());
