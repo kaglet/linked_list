@@ -1,7 +1,8 @@
 {
-  "name": "template",
+  "name": "linked_list",
   "version": "1.0.0",
-  "description": "",
+  "description": "A linked list implementation",
+  "main": "./src/index.js",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -10,8 +11,14 @@
     "build": "webpack --config webpack.prod.js",
     "deploy": "git subtree push --prefix dist origin gh-pages"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "linked list"
+  ],
+  "author": "kago",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kaglet/linked_list"
+  },
   "license": "ISC",
   "devDependencies": {
     "css-loader": "^6.10.0",

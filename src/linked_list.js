@@ -1,4 +1,4 @@
-import Node from "./node.js";
+const Node = require("./node.js");
 
 class LinkedList {
     constructor() {
@@ -170,4 +170,4 @@ class LinkedList {
     }
 }
 
-export default LinkedList;
+module.exports = LinkedList;
