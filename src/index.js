@@ -1,3 +1,5 @@
-const LinkedList = require("./linked_list.js");
+import LinkedList from "./linked_list.js";
 
-module.exports = LinkedList;
+export default LinkedList;
+
+

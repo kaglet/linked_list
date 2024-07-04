@@ -1,9 +1,12 @@
 {
-  "name": "linked_list",
-  "version": "1.0.0",
+  "name": "@kago_m/linked_list",
+  "version": "1.0.1",
   "description": "A linked list implementation",
   "main": "./src/index.js",
-  "private": true,
+  "type": "module",
+  "publishConfig": {
+  "access": "public"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --watch --config webpack.dev.js",

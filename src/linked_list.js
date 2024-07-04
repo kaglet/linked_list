@@ -1,4 +1,4 @@
-const Node = require("./node.js");
+import Node from "./node.js"
 
 class LinkedList {
     constructor() {
@@ -114,9 +114,9 @@ class LinkedList {
         let counter = 0;
 
         while(found !== true && curr !== null) {
-            if (curr.value === value) {
+            if (curr.value === value || JSON.stringify(curr.value) === JSON.stringify(value)) {
                 return counter;                
-            }
+            } 
             curr = curr.next;
             counter++;
         }
@@ -168,6 +168,11 @@ class LinkedList {
 
         prevNode.next = oldNode.next;
     }
+
+    editAt(index, value) {
+        let node = this.at(index);
+        node.value = value;
+    }
 }
 
-module.exports = LinkedList;
+export default LinkedList;
