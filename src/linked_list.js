@@ -114,6 +114,7 @@ class LinkedList {
         let counter = 0;
 
         while(found !== true && curr !== null) {
+            // TODO: Fix implementation of this, which does not work for objects
             if (curr.value === value || JSON.stringify(curr.value) === JSON.stringify(value)) {
                 return counter;                
             } 
